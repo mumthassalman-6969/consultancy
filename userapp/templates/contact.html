@@ -1,0 +1,434 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+
+<style>
+    .errors {
+        color: rgb(245, 13, 33);
+        border-color: darkgoldenrod;
+    }
+
+    .careerform {
+        margin-left: 10%;
+        background-color: #f1f1f1;
+        color: black;
+        height: 730px;
+        width: 550px;
+        padding-left: 50px;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        /* border-top: 1px solid #3a6a9e; */
+    }
+
+    /* .form-control{
+     box-shadow: rgb(114, 155, 18); 
+     background-color: lightsteelblue;  
+    
+  }  */
+    .form-control:hover {
+        background-color: rgb(144, 179, 233);
+    }
+
+    #submit {
+        background-color: rgb(73, 147, 243);
+        color: white;
+        height: 40px;
+        width: 100px;
+        margin-left: 400px;
+    }
+
+    #submit:hover {
+        background-color: rgb(142, 197, 223);
+    }
+
+    .hiring .post {
+        margin-left: 150px;
+    }
+
+    .hiring {
+        height: 500px;
+        width: 450px;
+        border: 2px;
+
+    }
+
+    .visit {
+        height: 730px;
+        width: 400px;
+        background-color: #103f6e;
+        color: white;
+        margin-top: 20px;
+        
+    }
+  .visitin{
+    margin-left: 60px;
+    height: 450px;
+    width: 300px;
+  }
+    .login .card {
+        width: 35rem;
+        height: 20rem;
+        margin-top: 80px;
+        margin-left: 200px;
+    }
+
+    .login .card .button:hover {
+        background-color: rgb(77, 133, 236);
+
+    }
+
+    #login {
+        background-color: rgb(96, 187, 214);
+    }
+    .contact{
+        height: 690px;
+        width:1300px;
+    }
+</style>
+
+
+
+
+<div class="row">
+
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        <div class="card">
+            <img src="{% static 'images/contact2.jpg' %}" class="card-img" alt="..."
+                style="height: 250px;border:none;background-size: cover;">
+            <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                <p class="card-text" style="color:rgb(44, 102, 85)">GET IN TOUCH</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="row">
+                       <div class="col-lg-12">
+                           <div class="login">
+                             <div class="card" > 
+                                 <div class="card-body"> 
+                                   <h5 class="card-title">Card title</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                                 <div>
+                                  <button  href="#" class="login" style="width:220px;height:40px;background-color:rgb(140, 189, 235);">LOGIN</button> 
+                                 <button  href="#" class="signup"style="margin-left:40px;width:250px;height:40px;background-color: rgb(140, 189, 235);
+                                ">SIGN UP</button> 
+                                 </div> 
+                              </div> 
+                            </div>
+                            
+
+                           </div>
+                       </div>
+
+
+                     </div> -->
+
+
+<!-- <div class="row">
+    <div class="col-lg-12">
+
+
+        <Modal: Login / Register Form-->
+        <!-- <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog cascading-modal" role="document">
+                Content-->
+                <!-- <div class="modal-content"> -->
+
+                    <!--Modal cascading tabs-->
+                    <!-- <div class="modal-c-tabs"> --> 
+
+                        <!-- Nav tabs -->
+                        <!-- <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#login0" role="tab"><i
+                                        class="fa fa-user mr-1"></i>
+                                    Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#register0" role="tab"><i
+                                        class="fa fa-user-plus mr-1"></i>
+                                    Register</a>
+                            </li>
+                        </ul> -->
+
+                        <!-- Tab panels -->
+                        <!-- <div class="tab-content"> -->
+                            <!--Panel 7-->
+                            <!-- <div class="tab-pane fade in show active" id="login0" role="tabpanel"> -->
+
+                                <!--Body-->
+                                <!-- <div class="modal-body mb-1">
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="modalLRInput10"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput10">Your
+                                            email</label>
+                                    </div>
+
+                                    <div class="md-form form-sm mb-4">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput11"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput11">Your
+                                            password</label>
+                                    </div>
+                                    <div class="text-center mt-2">
+                                        <button class="btn btn-info" id="myLogin">Log in </button>
+                                    </div>
+                                </div> -->
+                                <!--Footer-->
+                                <!-- <div class="modal-footer">
+                                    <div class="options text-center text-md-right mt-1">
+                                        <p>Not a member? <a href="#register0" class="blue-text">Sign Up</a></p>
+                                        <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div> -->
+                            <!--/.Panel 7-->
+
+                            <!--Panel 8-->
+                            <!-- <div class="tab-pane fade" id="register0" role="tabpanel"> -->
+
+                                <!--Body-->
+                                <!-- <div class="modal-body">
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="modalLRInput12"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput12">Your
+                                            email</label>
+                                    </div>
+
+                                    <div class="md-form form-sm mb-5">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput13"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                            password</label>
+                                    </div>
+
+                                    <div class="md-form form-sm mb-4">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="modalLRInput14"
+                                            class="form-control form-control-sm validate">
+                                        <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
+                                            password</label>
+                                    </div>
+
+                                    <div class="text-center form-sm mt-2">
+                                        <button class="btn btn-info" id="signupid">Sign up </button>
+                                    </div>
+
+                                </div> -->
+                                <!--Footer-->
+                                <!-- <div class="modal-footer">
+                                    <div class="options text-right">
+                                        <p class="pt-1">Already have an account? <a href="#login0" class="blue-text">Log
+                                                In</a></p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div> -->
+                            <!--/.Panel 8-->
+                        <!-- </div>
+
+                    </div>
+                </div> -->
+                <!--/.Content-->
+            <!-- </div>
+        </div> -->
+        <!--Modal: Login / Register Form-->
+
+        <!-- <div class="text-center">
+            <a href="" class="btn btn-default btn-rounded my-3" id="login" data-toggle="modal"
+                data-target="#modalLRForm"> LogIn/Register</a>
+        </div>
+
+
+
+    </div>
+</div>
+  -->
+
+
+
+  <div class="container"> 
+    <div class="contact">
+
+<div class="row">
+    <div class="col-lg-6">
+         
+        <!-- <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"> -->
+        <div class="careerform">
+            <form action="" id="myform">
+
+                <h2>Apply Now</h2>
+
+                <input class="form-control" type="text" name="username" placeholder="FULL NAME*">
+                <p id="usererror"></p>
+                <input class="form-control" type="text" name="designation" placeholder="DESIGNATION*">
+                <p id="usererror1"></p>
+                <input class="form-control" type="text" name="companyname" placeholder="COMPANY NAME">
+                <p id="usererror1"></p>
+
+                <input class="form-control" type="email" name="email" placeholder="EMAIL*">
+                <p id="usererror1"></p>
+                <input class="form-control" type="number" name="mobile" placeholder="PHONE NUMBER*">
+                <p id="usererror2"></p>
+
+
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="MESSAGE*"></textarea>
+                <!-- <input class="form-control" type="textarea" name="message" placeholder="MESSAGE*"
+                              style="height:100px"> -->
+                <p id="usererror3"></p>
+
+                <button id="submit">SEND</button>
+
+            </form>
+        </div>
+        <!-- </div>
+        </div>
+        </div> -->
+    </div> 
+     <div class="col-lg-6">
+       <div class="visit">
+           <div class="visitin">
+          <br><h3>Visit</h3><br>
+            BUSINESS CAFE<br>
+            2nd Floor, <br>
+            Beach Complex, <br>
+            Silk St, <br>
+            Mananchira, <br>
+            Kozhikode,<br>
+            Kerala 673032
+            <hr style="size:1px;">
+            <h3>Call</h3><br>
+
+            <p>
+                <i class="fa fa-phone mr-3"></i><a data-testid="linkElement" href="tel:+919744696969" class="_1fbEI" aria-disabled="false"style="color:white"><span class="_1Qjd7">+91 9744696969</span></a>
+              </p>
+              <p>
+                <i class="fa fa-phone mr-3"></i><a data-testid="linkElement" href="tel:+917902926692" class="_1fbEI" aria-disabled="false"style="color:white"><span class="_1Qjd7">+91 7902926692</span></a>
+             </p>
+             <hr style="size:1px;">
+           <h3>Email</h3><br>
+           businesscafe@gmail.com
+           <hr style="size:1px;">
+           <h3>Office Time</h3><br>
+             10.00 TO 18.00
+             
+              </div>
+        </div>
+    </div> 
+
+</div>
+</div>
+</div><br>
+
+
+<div class="row"> 
+
+
+    <div class="col-lg-12">
+  
+      <!--Google map-->
+      <!-- <div id="map-container-google-11" class="z-depth-1-half map-container-6"> -->
+        <div id="map-container-google-11" class="z-depth-1-half map-container-6"><br><br>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.10508263361!2d75.77034371480514!3d11.253679691998713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6594e904f97f9%3A0xf43e2159465b99d3!2sMCubeH%20Developers!5e0!3m2!1sen!2sin!4v1639594137901!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+      
+          </div>
+      </div>
+    </div>
+
+<script>
+    $(document).ready(function () {
+        $("#myform").validate({
+            errorClass: 'errors',
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 3,
+                },
+                designation: {
+                    required: true,
+                },
+
+                email: {
+                    required: true,
+                    email: true,
+                },
+                mobile: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10,
+                    number: true
+                },
+                text: {
+                    required: true,
+
+                },
+
+            },
+            messages: {
+                username: {
+                    required: "*name must be enter",
+                    minlength: "*more than 4",
+                },
+                email: {
+                    equalTo: "* enter your email",
+                },
+                mobile: {
+                    required: "*enter your mobile number",
+                    type: "*must be integer",
+                }
+
+
+                // <label for="exampleFormControlFile1">Example file input</label>
+                // <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+            },
+            // SubmitHandler :function(myform){
+            // form.submit();
+            submitHandler: function (myform) {
+                alert("succesfully sent");
+                form.submit();
+            }
+        })
+    })
+
+    // ==============modal script====================
+    
+//     $(document).ready(function(){
+//   $("#myLogin").click(function(){
+//     $("#myform").modal({show:true});
+//   });
+// });
+
+</script>
+
+{% endblock %}

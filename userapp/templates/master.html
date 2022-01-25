@@ -1,0 +1,349 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>consultancy</title>
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hr.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  <link rel="stylesheet" href="{% static 'css/business.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/marketing.css' %}">
+  <link rel="stylesheet" href="{% static 'css/work.css' %}">
+  <link rel="stylesheet" href="{% static 'css/master.css' %}">
+  
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="icon" href="https://c0.wallpaperflare.com/preview/106/795/684/advance-analysis-business-graph-data.jpg"
+    type="image/gif" sizes="16x16">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+   <!-- <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"> -->
+   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>  
+  
+<style>
+  element.style {
+    display: block;
+}
+scrollup {
+    background-color: #171717;
+    border-radius: 100%;
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
+}
+a {
+    /* color: #292b2c; */
+    text-decoration: none;
+    /* -webkit-transition: all 0.5s ease; */
+    transition: all .5s ease;
+}
+/* a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+} */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    /* color: -webkit-link; */
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+/* .down{
+  background-color: rgb(46, 188, 231);
+} */
+.down:hover{
+  color: rgb(56, 122, 243);
+}
+
+</style>
+    
+</head>
+
+<body>
+  
+   
+
+    <div class="row">
+      <div class="col-lg-12 col-md-6 col-xs-12">
+        <div class="headeritem">
+          <nav class="navbar navbar-expand-md fixed-top top-header menu"style="background-color:white">
+            <a class="navbar-brand"
+              style="color: #000;font-family:Verdana, Geneva, Tahoma, sans-serif;font: weight 500px;"
+              href="/user/homepage">BUSINESS CAFE</a>
+              
+            <button class="navbar-toggler"  type="button" data-toggle="collapse"data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fa fa-bars"></i></span>
+            </button>
+            
+            <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                  
+              <ul class="navbar-nav ml-auto">
+    
+                <li class="nav-item active">
+                  <a class="nav-link" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: black;"
+                    href="/user/homepage"> <span class="sr-only">(current)</span><span>HOME</span></a>
+
+
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: black;"
+                    href="/user/about">&nbsp WHO WE ARE</a>
+                </li>
+                <!-- <a data-testid="linkElement" href="tel:+919562778999" class="_1fbEI" aria-disabled="false"><span class="_1Qjd7">Call Us</span></a> -->
+                <li class="nav-item">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"
+                    style="color:  black;font-family: Verdana, Geneva, Tahoma, sans-serif" href="#"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <span> &nbsp WHAT WE DO</span>
+                  </a>
+                  <div class="dropdown-menu down" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item down" href="/user/businessconsulting"> BUSINESS CONSULTING</a>
+                    <a class="dropdown-item down" href="/user/hrconsulting"> HR CONSULTING</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item down" href="/user/marketing"> DIGITAL MARKETING</a>
+                  </div>
+                </li>
+
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: black;"
+                    href="/user/workwith"><span> &nbsp WORK WITH US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: black;"
+                    href="/user/contact"><span>&nbsp GET IN TOUCH</span></a>
+                </li>
+              </ul>
+              </div>
+            
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button> -->
+
+            <!-- </form> -->
+          </nav>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  
+  
+  <!-- </header> -->
+  <!-- content--- -->
+
+  <div class="row">
+    <div class="col-lg-12">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+  <!-- --footer---- -->
+
+  <div class="row">
+    <div class="col-lg-12" style=" height:80px">
+    </div>
+  </div>
+  <!-- footer tag -->
+
+  <footer class="page-footer font-small unique-color-dark" >
+
+    <div style="background-color: #a3bde4;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h5 class="mb-0">Get connected with us on social networks!</h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                class="fa fa-facebook-f"></i></a>
+            <!-- Twitter -->
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                class="fa fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                class="fa fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                class="fa fa-instagram"></i></a>
+
+            <!-- Linkedin
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="#!"
+            role="button"
+            ><i class="fa fa-linkedin-in"></i
+          ></a> -->
+            <!-- Github -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+                class="fa fa-github"></i></a>
+
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links --> 
+    <div style="background-color: #5073a7;">
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h4 class="text-uppercase font-weight-bold "> WE ARE</h4>
+
+
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Business Cafe Private Limited, Established in 2015, is a company registered under the Indian Companies
+            Act and is a leading Management Consulting firm having its presence across India and Middle East..</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h4 class="text-uppercase font-weight-bold">MENU</h4>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <h6> <a href="/user/homepage"style="color:black">HOME</a></h6>
+          </p>
+          <p>
+            <h6><a href="/user/about"style="color:black">WHO WE ARE</a></h6>
+          </p>
+          <p>
+            <h6><a href="/user/services"style="color:black">BUSINESS CONSULTING</a></h6>
+          </p>
+          <p>
+            <h6> <a href="/user/services"style="color:black">HR CONSULTING</a></h6>
+          </p>
+          <p>
+            <h6><a href="/user/services"style="color:black">DIGITAL MARKETING</a></h6>
+          </p>
+          <p>
+          <h6><a href="/user/services"style="color:black">WORK WITH US</a></h6>
+          </p>
+          <p>
+          <h6><a href="/user/contact"style="color:black">GET IN TOUCH</a></h6>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h4 class="text-uppercase font-weight-bold">CONNECT US </a></h4>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i>2nd Floor, Beach Complex, Silk St, Mananchira, Kozhikode, Kerala 673032
+          </p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> businesscafe@gmail.com
+          </p>
+          <p>
+            <i class="fa fa-phone mr-3"></i><a data-testid="linkElement" href="tel:+919744696969" class="_1fbEI" aria-disabled="false"style="color:black"><span class="_1Qjd7">+91 9744696969</span></a>
+          </p>
+          <p>
+            <i class="fa fa-phone mr-3"></i><a data-testid="linkElement" href="tel:+917902926692" class="_1fbEI" aria-disabled="false"style="color:black"><span class="_1Qjd7">+91 7902926692</span></a>
+            <!-- <i class="fa fa-print mr-3"></i><a href="+91 9744696969">+91 9744696969</a> -->
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      BusinessCafe.com
+    </div>
+    <!-- Copyright -->
+  </div>
+  </footer>
+  <!-- Footer -->
+  <a href="#" class="scrollup" style="display: block;"><i class="ion-ios-arrow-up">
+    ::before ==$0
+  </i></a>
+
+
+
+
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+    integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

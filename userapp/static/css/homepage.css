@@ -1,0 +1,15 @@
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+
+.caption{
+    height: 50px;
+    margin-top: 900px;
+    color: rgb(26, 26, 151);
+}
+.card-body .btn{
+    background-color: rgb(121, 160, 233);
+}
+.card-body .btn:hover{
+    background-color: rgb(32, 85, 233);
+}

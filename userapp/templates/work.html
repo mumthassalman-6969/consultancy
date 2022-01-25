@@ -1,0 +1,177 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+<style>
+  .errors{
+        color: rgb(245, 13, 33);
+        border-color: darkgoldenrod;
+    } 
+.careerform{
+    margin-left: 20%;
+     background-color: #f1f1f1;
+     color: black;
+     height: 540px;
+     width: 450px;
+     padding-left: 50px;
+     padding: 20px
+}
+input{
+    width:200px
+}
+#submit{
+    background-color: rgb(73, 147, 243);
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+#submit:hover{
+    background-color: rgb(142, 197, 223);
+}
+.hiring .post{
+margin-left: 150px;
+}
+.hiring{
+  height: 500px;
+  width:450px;
+  border: 2px;
+  
+}
+
+</style>
+ 
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div>
+            <div class="card">
+                <img src="{% static 'images/work.jpg' %}" class="img-fluid" alt="..."
+                    style="height: 250px;border:none;background-size: cover;">
+                <div class="card-img-overlay">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                    <p class="card-text">WORK WITH US</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br><br>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        <div class="jumbotron jumbotron-fluid" style="background-color:white;margin-left:300px">
+            <div class="container">
+                <h3 style="color:rgb(98, 168, 233);margin-left: 240px;"><u>OUR CULTURE</u></h3>
+                <p>At Business Cafe, we encourage transparency and look for creative options from our team.
+                    We believe that the secret weapon for building the best culture is open and honestfeedback. We work
+                    in close association with our clients to deliver and implement an impeccable solution.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+     
+        <div class="jumbotron jumbotron-fluid" style="background-color:white;margin-left:300px">
+            <div class="container">
+                <h3 style="color:rgb(98, 168, 233);margin-left: 250px;"><u>OPENINGS</u></h3>
+                <p style="margin-left: 70px;">Contact us at  <a href="hr@businesscafe.com"style="color:black;">hr@businesscafe.com</a> We’d be delighted to hear from you</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-xs-12">
+    <div class="hiring">
+     <h3 style="margin-left: 250px;">We Are Hiring</h3>
+     <ul class="hiring post">
+      <li><h5>Senior Tax Accountant</h5></li>
+      <h6>Calicut • Full-time • 3 to 5 year Experience</h6><br>
+       
+      <li><h5>Digital Marketing Executive</li></h5>
+      <h6>Calicut • Full-time • Fresher to 3 year Experience</h6>
+     </ul>
+     </div>
+     </div>
+    <div class="col-lg-6 col-md-12 col-xs-12">
+      <div class="careerform">
+          <form action="" id="myform">
+              <div class="container">
+            
+                <h2>Apply Now</h2>
+                
+                <input class="form-control" type="text" name="username" placeholder="Name">
+                <p id="usererror"></p>
+                <input class="form-control" type="email" name="email" placeholder="Email">
+                <p id="usererror1"></p>
+                <input class="form-control" type="number" name="mobile" placeholder="Mobile">
+                <p id="usererror2"></p>
+                <input class="form-control" type="text" name="subject" placeholder="Subject">
+                <p id="usererror3"></p>
+                <label for="exampleFormControlFile1">Upload CV</label>
+
+                 <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+  
+                <button id="submit"> submit</button>
+            </div>
+        </form>
+      </div>
+      </div>
+      </div>
+          <script>
+            $(document).ready(function(){
+              $("#myform").validate({
+                  errorClass:'errors' ,
+               rules :{
+                   username :{
+                       required :true,
+                       minlength :3,
+                       },
+                    email:{
+                        required :true,
+                        email:true,
+                    },
+                    mobile:{
+                        required:true,
+                        minlength:10,
+                        maxlength:10,
+                        number: true
+                    } ,
+                    subject:{
+                        required:true,
+                        
+                    },
+                    
+               }  ,
+               messages:{
+                        username:{
+                            required: "*name must be enter",
+                            minlength: "*more than 4",
+                        },
+                        email:{
+                            equalTo: "* enter your email",
+                        },
+                        mobile:{
+                            required:"*enter your mobile number",
+                            type:"*must be integer",
+                        }
+                    
+                       
+                        // <label for="exampleFormControlFile1">Example file input</label>
+                        // <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  
+                      },
+                // SubmitHandler :function(myform){
+                    // form.submit();
+                     submitHandler: function(myform) {alert("succesfully submited");
+                     form.submit();
+                } 
+              })
+            })
+    
+        
+        </script>          
+
+        {% endblock %}
